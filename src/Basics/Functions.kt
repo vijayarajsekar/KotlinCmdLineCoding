@@ -1,3 +1,5 @@
+package Basics
+
 fun main(args: Array<String>) {
 
     emptyfun()
@@ -39,10 +41,10 @@ fun bigger(num1: Int, num2: Int): Int = if (num1 > num2) num1 else num2
  * Single Line Functions - As expressions TYPE 2
  */
 fun bigger1(num1: Int, num2: Int): Int = if (num1 > num2) {
-    println("$num1 is bigger")
+    println("$num1 is Basics.bigger")
     num1
 } else {
-    println("$num2 is bigger")
+    println("$num2 is Basics.bigger")
     num2
 }
 
