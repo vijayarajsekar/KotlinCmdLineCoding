@@ -69,4 +69,50 @@ fun main(args: Array<String>) {
         if (chars == 5)
             println(name[chars])
     }
+
+    /**
+     *  While & do While
+     */
+
+    println("\n")
+
+    var count = 0
+    while (count < 10) {
+        println(count)
+        count++
+    }
+
+    var num1: String
+    var num2: String
+    var isAgain: String
+
+    do {
+        println("Enter num 1 . . .")
+        num1 = readLine()!!
+
+        println("Enter num 2 . . .")
+        num2 = readLine()!!
+
+        println("$num1 + $num2 = " + (num1.toInt() + num2.toInt()))
+        print("Do It Again Y/N . . .")
+        isAgain = readLine()!!
+
+    } while (isAgain == "Y" || isAgain == "y")
+
+    /**
+     * Labeled Break
+     */
+
+    test@ for (i in 1..10) {
+
+        for (j in 1..10) {
+
+            if (j == 5)
+                break@test
+
+            println("i = $i AND j = $j")
+
+        }
+
+    }
 }
